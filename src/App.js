@@ -6,7 +6,9 @@ function App() {
   return (
     <div>
       <NavBar />
+      <div className=''>
       <Home />
+      </div>
     </div>
   );
 }
