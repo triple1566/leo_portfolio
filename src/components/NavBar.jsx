@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div className='flex justify-between items-center w-full h-20 px-4
-    text-[#ffbd2f] bg-gradient-to-r from-red-50 to-slate-300 fixed'>
+    text-[#ffbd2f] bg-gradient-to-r to-red-50 from-slate-100 fixed'>
       <div>
         <h1 className="text-3xl md:text-5xl font-signature ml-2 cursor-pointer">
             Leo Jeong
