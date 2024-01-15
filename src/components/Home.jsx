@@ -13,22 +13,24 @@ const Home = () => {
                 <h2 className='text-5xl tracking-tight sm:text-7xl md:leading-Home font-bold text-[#0c0e3e] text-center md:text-left'>
                     Welcome To My Portfolio!
                 </h2>
-                <p className='text-[#282828] py-4 max-w-md text-2xl sm:text-4xl text-center md:text-left'>
+                <p className='text-[#282828] py-4 max-w-md text-2xl sm:text-3xl text-center md:text-left'>
                     My description goes here
                 </p>
                 <div>
-                    <button className='leading-Desktop'>
+                    <button className='group text-[#ffeff4] w-fit px-6 py-3 my-2 flex items-center
+                    rounded-md bg-gradient-to-br from-[#ff8eb6] to-[#ff0062] leading-Desktop font-semibold'>
                         Portfolio
-                        <span>
-                            <FaRegArrowAltCircleRight />
+                        <span className='px-2 group-hover:rotate-90 duration-300 '>
+                            <FaRegArrowAltCircleRight size={25}
+                            className='mx-1 my-1'
+                            />
                         </span>
                     </button>
                 </div>
             </div>
             <div className='px-10 py-20'>
-                <img src={HeroImage} alt="myProfile"
-                className='rounded-2xl mx-auto w-2/3 sm:w-full'
-                />
+                <img src={HeroImage} alt="profileBatSimon"
+                className='rounded-3xl mx-auto w-2/3 sm:w-full sm:scale-70 cursor-pointer'/>
             </div>
         </div>
     </div>
