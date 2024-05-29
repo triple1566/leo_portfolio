@@ -7,11 +7,9 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className=''>
       <Home />
       
       <SocialLinks />
-      </div>
     </div>
   );
 }
