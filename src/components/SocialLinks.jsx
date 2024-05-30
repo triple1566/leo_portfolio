@@ -53,11 +53,11 @@ const SocialLinks = () => {
       id:5,
       child:(
         <>
-          <p className='text-[30px], font-SDSwagger text-[#00ffa2]'>Waktapulse</p><img src={WaktapulseLogo} alt="WaktapulseLogo" className='scale-50 ml-[-13px]'/>
+          <p className='text-[30px], font-SDSwagger text-[#ffffff]'>WAKTAPULSE</p><img src={WaktapulseLogo} alt="WaktapulseLogo" className='scale-[40%] ml-[-17px]'/>
         </>
       ),
       href: 'https://www.instagram.com/playwaktapulse/',
-      style: 'rounded-[50px] bg-gradient-to-r from-[#0e3d2c] to-[#082118] text-[#00FFA3]',
+      style: 'rounded-[50px] bg-gradient-to-r from-[#252525] to-[#131313] text-[#00FFA3]',
       download: true,
     }
   ];
