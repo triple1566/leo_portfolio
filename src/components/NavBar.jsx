@@ -30,8 +30,8 @@ const NavBar = () => {
     ]//this is an array for the top navigation bar.
 
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4
-    text-[#ffae00] bg-gradient-to-r to-red-50 from-slate-100 fixed'>
+    <div className='flex justify-between items-center w-full h-[50px] px-4
+    text-[#ffae00] bg-gradient-to-r from-[#ffffff] to-[#7db3ff] fixed'>
       <div>
         <h1 className="text-3xl md:text-5xl font-signature ml-2 cursor-pointer">
             Leo Jeong
@@ -41,7 +41,7 @@ const NavBar = () => {
 
         {links.map(({id,link})=>(
             <li key={id} className='px-4 cursor-pointer capitalize font-medium
-            text-gray-500 hover:scale-105 duration-200 hover:text-[#4c4c4c]'>
+            text-[#000000] hover:scale-105 duration-200 hover:text-[#fffcec]'>
                 {link}
             </li>
         ))}

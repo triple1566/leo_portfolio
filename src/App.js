@@ -9,7 +9,24 @@ function App() {
   return (
     <div>
       <NavBar />
+      <br />
+      <br />
+      <br />
       <Home />
+      <div className='h-full md:h-0'>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
       <About />
       <Portfolio />
 

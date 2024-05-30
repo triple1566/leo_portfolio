@@ -2,6 +2,7 @@ import React from 'react';
 import {FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from'react-icons/bs';
+import WaktapulseLogo from '../assets/Logo.png';
 
 
 const SocialLinks = () => {
@@ -52,11 +53,11 @@ const SocialLinks = () => {
       id:5,
       child:(
         <>
-          Waktapulse <img src='/assets/Logo.png' alt="WaktapulseLogo" size={30}/>
+          <p className='text-[30px], font-SDSwagger text-[#00ffa2]'>Waktapulse</p><img src={WaktapulseLogo} alt="WaktapulseLogo" className='scale-50 ml-[-13px]'/>
         </>
       ),
       href: 'https://www.instagram.com/playwaktapulse/',
-      style: 'rounded-tr-md',
+      style: 'rounded-[50px] bg-gradient-to-r from-[#0e3d2c] to-[#082118] text-[#00FFA3]',
       download: true,
     }
   ];
@@ -66,8 +67,8 @@ const SocialLinks = () => {
       <ul>
         {links.map(({id, child, href, style, download}) => (
 
-            <li key = {id} className={"flex justify-between items-center w-40 h-14 px-4 bg-{#FFFFFF} ml-[-100px] hover:rounded-md duration-300 hover:ml-[-10px]" + " " + style}>
-              <a href={href} className='flex justify-between items-center w-full text-{#0c0e3e} ' download={download} target='_blank'>
+            <li key = {id} className={"flex justify-between items-center w-40 h-14 px-4 bg-{#FFFFFF} ml-[-100px] hover:rounded-lg duration-300 hover:ml-[-10px]" + " " + style}>
+              <a href={href} className='flex justify-between items-center w-full text-{#0c0e3e} ' download={download} target='_blank' rel='noreferrer'>
                 <>
                   {child}
                 </>
