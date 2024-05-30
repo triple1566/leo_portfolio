@@ -47,6 +47,17 @@ const SocialLinks = () => {
       href: '/ResumeV10.pdf',
       style: 'rounded-tr-md',
       download: true,
+    },
+    {
+      id:5,
+      child:(
+        <>
+          Waktapulse <img src='/assets/Logo.png' alt="WaktapulseLogo" size={30}/>
+        </>
+      ),
+      href: 'https://www.instagram.com/playwaktapulse/',
+      style: 'rounded-tr-md',
+      download: true,
     }
   ];
 
