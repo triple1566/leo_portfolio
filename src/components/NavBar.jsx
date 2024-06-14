@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div className='flex justify-between items-center w-full h-20 px-4
-    text-[#14216d] backdrop-blur-lg bg-[#fff6f6]/50 fixed'>
+    text-[#14216d] backdrop-blur-md bg-[#fff6f6]/50 hover:backdrop-blur-lg fixed'>
       <div>
         <h1 className="text-3xl md:text-5xl font-signature ml-2 cursor-pointer">
             Leo Jeong

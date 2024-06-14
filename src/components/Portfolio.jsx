@@ -1,7 +1,6 @@
 import React from 'react';
 import UE1 from "../assets/portfolio/UE1.jpeg";
 import UE2 from "../assets/portfolio/UE2.jpeg";
-import Logo from "../assets/portfolio/Logo.png";
 import ClubSales from "../assets/portfolio/ClubSales.png";
 
 //base margin:  w-[80%] sm:w-[70%]
@@ -19,33 +18,28 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: Logo
-    },
-    {
-      id: 4,
       src: ClubSales
     },
   ];
 
   return (
-    <div name="portfolio" className='w-full text-{#0c0e3e} md: h-screen' >
-      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center h-full w-[80%] sm:w-[70%]'>
+    <div name="portfolio" className='w-full text-[#0c0e3e] md: h-full' >
+      <div className='max-w-screen-lg p-4 mx-auto flex flex-col items-center justify-center h-full w-[90%] sm:w-[80%]'>
 
-        <div className='pb-8'>
-          <p className='text-[30px] font-bold inline border-b-4 border-{#0c0e3e} sm:text-[60px]'>Portfolio</p>
+        <div className='pb-12'>
+          <p className='text-[30px] font-bold inline border-b-4 sm:text-[40px]'>Portfolio</p>
         </div>
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
 
             {
               portfolios.map(({id,src})=>(
-                <div key='id' className='backdrop-blur bg-white/80 shadow-md rounded-lg hover:bg-gradient-to-br text-[0c0e3e] from-[#ff8eb6] to-[#ff0062] hover:text-white'>
+                <div key='id' className='bg-gradient-to-br from-white to-gray-300 shadow-md rounded-lg text-white'>
               <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
-              <div className='flex items-center justify-center'>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>FPS</button>
-                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-110'>UE5</button>
-              </div>
-            </div>
+              <div className='flex items-center justify-center text-gray-600 font-semibold text-center'>
+                <button className='w-1/3 px-6 py-3 m-4 duration-200 bg-gradient-to-br from-gray-300 to-white rounded-md hover:text-[#ff0059]'>Link</button>
+                <button className='w-1/3 px-6 py-3 m-4 duration-200 bg-gradient-to-br from-gray-300 to-white rounded-md hover:text-[#ff0059]'>Link</button>
+              </div>            </div>
               ))
             }
 

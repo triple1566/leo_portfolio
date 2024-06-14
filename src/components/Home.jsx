@@ -6,9 +6,9 @@ import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div name='home' className='h-screen w-full bg-gradient-to-r from-[#fff6f6] to-[#7db3ff]'>
+    <div name='home' className='h-full w-full bg-gradient-to-r from-[#fff6f6] to-[#7db3ff]'>
 
-        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row leading-Mobile sm:leading-Desktop'>
+        <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 pt-12 md:flex-row leading-Mobile sm:leading-Desktop w-[90%] sm:w-[80%]'>
             <div className='flex flex-col justify-center h-full items-center md:items-start md:pt-0 pt-60'>
                 <h2 className='text-5xl tracking-tight sm:text-7xl md:leading-Home font-bold text-[#0c0e3e] text-center md:text-left'>
                     Welcome!
