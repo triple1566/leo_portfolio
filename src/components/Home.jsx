@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImage from "../assets/heroImage.PNG";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import {Link} from 'react-scroll';
 
 
 
@@ -17,7 +18,7 @@ const Home = () => {
                     Explore to see my works!
                 </p>
                 <div>
-                    <button className='group text-[#ffeff4] w-fit px-6 py-3 my-2 flex items-center
+                    <Link to='portfolio' duration={500} smooth className='group text-[#ffeff4] w-fit px-6 py-3 my-2 flex items-center
                     rounded-md bg-gradient-to-br from-[#ff8eb6] to-[#ff0062] leading-Desktop font-semibold'>
                         Portfolio
                         <span className='px-2 group-hover:rotate-90 duration-300'>
@@ -25,7 +26,7 @@ const Home = () => {
                             className='mx-1 my-1'
                             />
                         </span>
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className='px-10 py-20'>
