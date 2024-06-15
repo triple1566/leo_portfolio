@@ -34,9 +34,9 @@ const NavBar = () => {
     <div className='flex justify-between items-center w-full h-20 px-4
     text-[#14216d] backdrop-blur-md bg-[#fff6f6]/50 hover:backdrop-blur-lg fixed'>
       <div>
-        <h1 className="text-3xl md:text-5xl font-signature ml-2 cursor-pointer">
+        <Link to='home' smooth duration={500} className="text-3xl md:text-5xl font-signature ml-2 cursor-pointer">
             Leo Jeong
-        </h1>
+        </Link>
       </div>
       <ul className='visibility: hidden sm:flex'>
 
