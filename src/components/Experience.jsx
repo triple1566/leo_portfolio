@@ -14,6 +14,7 @@ import reactlogo from "../assets/react.png";
 import subsP from "../assets/SubstancePainter.png";
 import tailwind from "../assets/tailwind.png";
 import UE from "../assets/UnrealEngine.png";
+import jv from "../assets/javalogo.png";
 
 
 const Experience = () => {
@@ -102,6 +103,12 @@ const Experience = () => {
             src: subsP,
             title: 'Substance Painter',
             style: 'shadow-red-500'
+        },
+        {
+            id: 15,
+            src: jv,
+            title: 'Java',
+            style: 'shadow-orange-500'
         },
     ]
 
