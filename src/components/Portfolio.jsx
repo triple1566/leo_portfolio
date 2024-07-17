@@ -10,15 +10,21 @@ const Portfolio = () => {
   const portfolios=[
     {
       id: 1,
-      src: UE1
+      src: UE1,
+      text: "HUD/UI Demo",
+      link: "https://youtu.be/SeTS6ctvShU"
     },
     {
       id: 2,
-      src: UE2
+      src: UE2,
+      text: "FPV-TPV Server Replication Demo",
+      link: "https://youtu.be/RE01SPaD6E4"
     },
     {
       id: 3,
-      src: ClubSales
+      src: ClubSales,
+      text: "Webpage no longer maintained",
+      link: "https://github.com/triple1566/CSCB20A3_ClubSalesWebsite"
     },
   ];
 
@@ -33,13 +39,13 @@ const Portfolio = () => {
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
 
             {
-              portfolios.map(({id,src})=>(
-                <div key='id' className='bg-gradient-to-br from-white to-gray-300 shadow-md rounded-lg text-white'>
-              <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
-              <div className='flex items-center justify-center text-gray-600 font-semibold text-center'>
-                <button className='w-1/3 px-6 py-3 m-4 duration-200 bg-gradient-to-br from-gray-300 to-white rounded-md hover:text-[#ff0059]'>Link</button>
-                <button className='w-1/3 px-6 py-3 m-4 duration-200 bg-gradient-to-br from-gray-300 to-white rounded-md hover:text-[#ff0059]'>Link</button>
-              </div>            </div>
+              portfolios.map(({id,src,text,link})=>(
+              <div key='id' className='bg-gradient-to-br from-white to-gray-300 shadow-md rounded-lg text-white'>
+                  <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
+                  <div href='link' className='flex items-center justify-center text-gray-600 font-semibold text-center'>
+                    <button className='w-full px-6 py-3 m-4 duration-200 bg-gradient-to-br from-gray-300 to-white rounded-md hover:text-[#ff0059]'><a href={link}>{text}</a></button>
+                  </div>
+              </div>
               ))
             }
 
