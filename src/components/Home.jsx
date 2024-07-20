@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from "../assets/heroImage.PNG";
+import HeroImage from "../assets/heroImage.jpg";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import {Link} from 'react-scroll';
 
