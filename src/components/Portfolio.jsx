@@ -1,7 +1,7 @@
 import React from 'react';
 import UE1 from "../assets/portfolio/UE1.jpeg";
 import UE2 from "../assets/portfolio/UE2.jpeg";
-import ClubSales from "../assets/portfolio/ClubSales.png";
+import TAAMapp from "../assets/portfolio/TAAMapp.png";
 
 //base margin:  w-[80%] sm:w-[70%]
 
@@ -22,9 +22,9 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: ClubSales,
-      text: "Webpage no longer maintained",
-      link: "https://github.com/triple1566/CSCB20A3_ClubSalesWebsite"
+      src: TAAMapp,
+      text: "Toronto Asian Arts App",
+      link: "https://youtu.be/Cmdpo_1TH80"
     },
   ];
 
