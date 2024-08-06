@@ -15,6 +15,7 @@ import subsP from "../assets/SubstancePainter.png";
 import tailwind from "../assets/tailwind.png";
 import UE from "../assets/UnrealEngine.png";
 import jv from "../assets/javalogo.png";
+import an from "../assets/Android_robot.png";
 
 
 const Experience = () => {
@@ -109,6 +110,12 @@ const Experience = () => {
             src: jv,
             title: 'Java',
             style: 'shadow-orange-500'
+        },
+        {
+            id: 16,
+            src: an,
+            title: 'Android',
+            style: 'shadow-green-500'
         },
     ]
 
