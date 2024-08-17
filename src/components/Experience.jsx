@@ -1,17 +1,17 @@
 import React from 'react'
 
-import blender from "../assets/Blender.png";
+//import blender from "../assets/Blender.png";
 import c from "../assets/C.png";
 import css from "../assets/css.png";
 import github from "../assets/github.png";
 import html from "../assets/html.png";
 import js from "../assets/javascript.png";
 import node from "../assets/node.png";
-import nomad from "../assets/nomad.png";
+//import nomad from "../assets/nomad.png";
 import pgsql from "../assets/Postgresql.png";
 import python from "../assets/python.png";
 import reactlogo from "../assets/react.png";
-import subsP from "../assets/SubstancePainter.png";
+//import subsP from "../assets/SubstancePainter.png";
 import tailwind from "../assets/tailwind.png";
 import UE from "../assets/UnrealEngine.png";
 import jv from "../assets/javalogo.png";
@@ -89,30 +89,12 @@ const Experience = () => {
         },
         {
             id: 12,
-            src: nomad,
-            title: 'Nomad Sculpt',
-            style: 'shadow-red-500'
-        },
-        {
-            id: 13,
-            src: blender,
-            title: 'Blender',
-            style: 'shadow-red-500'
-        },
-        {
-            id: 14,
-            src: subsP,
-            title: 'Substance Painter',
-            style: 'shadow-red-500'
-        },
-        {
-            id: 15,
             src: jv,
             title: 'Java',
             style: 'shadow-orange-500'
         },
         {
-            id: 16,
+            id: 13,
             src: an,
             title: 'Android',
             style: 'shadow-green-500'
