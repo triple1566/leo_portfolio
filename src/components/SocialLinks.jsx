@@ -45,7 +45,7 @@ const SocialLinks = () => {
           Resume<BsFillPersonLinesFill size={30}/>
         </>
       ),
-      href: '/SoocharnLeoJeong_AmazonApplication_Resume.pdf',
+      href: '/ResumeV12.pdf',
       style: 'rounded-tr-md',
       download: true,
     },
