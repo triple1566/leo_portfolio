@@ -17,6 +17,7 @@ import UE from "../assets/UnrealEngine.png";
 import jv from "../assets/javalogo.png";
 import an from "../assets/Android_robot.png";
 import ex from "../assets/express-js.png";
+import rn from "../assets/react-native.png";
 
 
 const Experience = () => {
@@ -105,6 +106,12 @@ const Experience = () => {
             src: ex,
             title: 'Express.js',
             style: 'shadow-black-500'
+        },
+        {
+            id: 15,
+            src: rn,
+            title: 'React Native',
+            style: 'shadow-blue-500'
         },
     ]
 

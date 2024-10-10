@@ -2,7 +2,8 @@ import React from 'react';
 import UE1 from "../assets/portfolio/UE1.jpeg";
 import UE2 from "../assets/portfolio/UE2.jpeg";
 import TAAMapp from "../assets/portfolio/TAAMapp.png";
-import TODOlist from "../assets/portfolio/TODOlist.png"
+import TODOlist from "../assets/portfolio/TODOlist.png";
+import QuickBay from "../assets/portfolio/QuickBay.jpeg";
 
 //base margin:  w-[80%] sm:w-[70%]
 
@@ -32,6 +33,12 @@ const Portfolio = () => {
       src: TODOlist,
       text: "Leo's ToDo List",
       link: "https://leo-pern-todo-650a2faaa317.herokuapp.com/"
+    },
+    {
+      id: 5,
+      src: QuickBay,
+      text: "QuickBay",
+      link: "https://devpost.com/software/quickbay"
     },
   ];
 
