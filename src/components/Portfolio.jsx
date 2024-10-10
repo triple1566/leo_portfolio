@@ -3,7 +3,7 @@ import UE1 from "../assets/portfolio/UE1.jpeg";
 import UE2 from "../assets/portfolio/UE2.jpeg";
 import TAAMapp from "../assets/portfolio/TAAMapp.png";
 import TODOlist from "../assets/portfolio/TODOlist.png";
-import QuickBay from "../assets/portfolio/QuickBay.jpeg";
+import QuickBay from "../assets/portfolio/QuickBay.png";
 
 //base margin:  w-[80%] sm:w-[70%]
 
