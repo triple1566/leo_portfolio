@@ -45,7 +45,7 @@ const SocialLinks = () => {
           Resume<BsFillPersonLinesFill size={30}/>
         </>
       ),
-      href: '/ResumeV12.pdf',
+      href: '/JEONG SOOCHARN - RESUME',
       style: 'rounded-tr-md',
       download: true,
     },
@@ -56,7 +56,7 @@ const SocialLinks = () => {
           <p className='text-[30px], font-SDSwagger text-[#ffffff]'>WAKTAPULSE</p><img src={WaktapulseLogo} alt="WaktapulseLogo" className='scale-[40%] ml-[-17px]'/>
         </>
       ),
-      href: 'https://www.instagram.com/playwaktapulse/',
+      href: 'https://www.instagram.com/leopard1566/?__pwa=1',
       style: 'rounded-[50px] bg-gradient-to-r from-[#252525] to-[#131313] text-[#00FFA3]',
       download: true,
     }
