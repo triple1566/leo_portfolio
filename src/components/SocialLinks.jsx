@@ -45,7 +45,7 @@ const SocialLinks = () => {
           Resume<BsFillPersonLinesFill size={30}/>
         </>
       ),
-      href: '/JEONG SOOCHARN - RESUME',
+      href: '/JEONG SOOCHARN - RESUME.pdf',
       style: 'rounded-tr-md',
       download: true,
     },
