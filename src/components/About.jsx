@@ -11,7 +11,7 @@ const About = () => {
                 </p>
             </div>
             <p className='text-xl mt-20'>
-            Welcome to my portfolio website! I'm an aspiring student developer with a strong passion for creating immersive and dynamic experiences in web, games, and applications. Currently, I'm deep into the development of an exciting FPS game, leveraging my expertise in Unreal Engine and its powerful Blueprint system to bring my vision to life.
+            I am a Computer Science student at the University of Toronto with a strong background in AI, software development, and cloud computing. My experience spans machine learning model development, full-stack application design, and cloud infrastructure optimization. I have worked on projects such as an image denoiser using RBF regression, a React Native app for automated eBay listings, and a penguin species classifier using Azure ML. My focus is on building scalable, efficient, and impactful solutions that bridge the gap between data and innovation. Let’s connect and collaborate on meaningful technology-driven projects.
             </p>
         </div>
     </div>
