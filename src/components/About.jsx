@@ -11,7 +11,11 @@ const About = () => {
                 </p>
             </div>
             <p className='text-xl mt-20'>
-            I am a Computer Science student at the University of Toronto with a strong background in AI, software development, and cloud computing. My experience spans machine learning model development, full-stack application design, and cloud infrastructure optimization. I have worked on projects such as an image denoiser using RBF regression, a React Native app for automated eBay listings, and a penguin species classifier using Azure ML. My focus is on building scalable, efficient, and impactful solutions that bridge the gap between data and innovation. Let’s connect and collaborate on meaningful technology-driven projects.
+            I’m a Computer Science student at the University of Toronto with a passion for AI, software development, and cloud computing ☁️💡. I specialize in machine learning, full-stack development, and scalable cloud solutions, combining technical expertise with innovative problem-solving.
+
+From building an RBF-based image denoiser 🖼️ and a React Native eBay listing app 📱 to optimizing cloud infrastructure, I love tackling complex challenges with efficient, data-driven solutions ⚡.
+
+Let’s connect and create something impactful! 🚀
             </p>
         </div>
     </div>
