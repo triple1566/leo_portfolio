@@ -4,6 +4,8 @@ import UE2 from "../assets/portfolio/UE2.jpeg";
 import TAAMapp from "../assets/portfolio/TAAMapp.png";
 import TODOlist from "../assets/portfolio/TODOlist.png";
 import QuickBay from "../assets/portfolio/QuickBay.png";
+import RBF from "../assets/portfolio/RBF.png";
+import PolyReg from "../assets/portfolio/PolyReg.png";
 
 //base margin:  w-[80%] sm:w-[70%]
 
@@ -12,33 +14,45 @@ const Portfolio = () => {
   const portfolios=[
     {
       id: 1,
-      src: UE1,
-      text: "HUD/UI Demo",
-      link: "https://youtu.be/SeTS6ctvShU"
+      src: QuickBay,
+      text: "QuickBay",
+      link: "https://devpost.com/software/quickbay"
     },
     {
       id: 2,
-      src: UE2,
-      text: "FPV-TPV Server Replication Demo",
-      link: "https://youtu.be/RE01SPaD6E4"
-    },
-    {
-      id: 3,
       src: TAAMapp,
       text: "Toronto Asian Arts App",
       link: "https://youtu.be/Cmdpo_1TH80"
     },
     {
-      id: 4,
+      id: 3,
       src: TODOlist,
       text: "Leo's ToDo List",
       link: "https://leo-pern-todo-650a2faaa317.herokuapp.com/"
     },
     {
+      id: 4,
+      src: RBF,
+      text: "RBF Image Desnoiser",
+      link: "https://github.com/triple1566/RBF_Image_Denoiser"
+    },
+    {
       id: 5,
-      src: QuickBay,
-      text: "QuickBay",
-      link: "https://devpost.com/software/quickbay"
+      src: PolyReg,
+      text: "Polynomial Regression Algorithm",
+      link: "https://github.com/triple1566/Polynomial_Regression_Algorithm/blob/main/PolyReg/poly_notebook.ipynb"
+    },
+    {
+      id: 6,
+      src: UE1,
+      text: "HUD/UI Demo",
+      link: "https://youtu.be/SeTS6ctvShU"
+    },
+    {
+      id: 7,
+      src: UE2,
+      text: "FPV-TPV Server Replication Demo",
+      link: "https://youtu.be/RE01SPaD6E4"
     },
   ];
 

@@ -7,7 +7,7 @@ import github from "../assets/github.png";
 import html from "../assets/html.png";
 import js from "../assets/javascript.png";
 import node from "../assets/node.png";
-//import nomad from "../assets/nomad.png";
+import jupyter from "../assets/Jupyter.png";
 import pgsql from "../assets/Postgresql.png";
 import python from "../assets/python.png";
 import reactlogo from "../assets/react.png";
@@ -112,6 +112,12 @@ const Experience = () => {
             src: rn,
             title: 'React Native',
             style: 'shadow-blue-500'
+        },
+        {
+            id: 16,
+            src: jupyter,
+            title: 'Jupyter Notebook',
+            style: 'shadow-orange-500'
         },
     ]
 
