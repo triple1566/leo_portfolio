@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
-      <div className="glass-panel mx-auto flex h-16 max-w-6xl items-center justify-between rounded-full px-5 shadow-2xl shadow-black/20">
+      <div className="glass-panel mx-auto flex h-16 max-w-6xl items-center justify-between rounded-[1.6rem] px-5 shadow-2xl shadow-black/20">
         <Link
           to="home"
           smooth
@@ -42,14 +42,14 @@ const NavBar = () => {
           Leo Jeong
         </Link>
 
-        <ul className="hidden items-center gap-1 rounded-full border border-white/5 bg-white/5 px-2 py-1 backdrop-blur sm:flex">
+        <ul className="hidden items-center gap-1 rounded-[1.2rem] border border-white/5 bg-white/5 px-2 py-1 backdrop-blur sm:flex">
           {links.map(({id,link})=> (
             <li key={id}>
               <Link
                 to={link}
                 smooth
                 duration={500}
-                className="cursor-pointer rounded-full px-4 py-2 text-sm font-medium capitalize text-slate-200/80 transition hover:bg-white/10 hover:text-white"
+                className="cursor-pointer rounded-[1rem] px-4 py-2 text-sm font-medium capitalize text-slate-200/80 transition hover:bg-white/10 hover:text-white"
               >
                 {link}
               </Link>
@@ -60,7 +60,7 @@ const NavBar = () => {
         <button
           type="button"
           onClick={() => setNav(!nav)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-100 transition hover:bg-white/10 sm:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-[1rem] border border-white/10 bg-white/5 text-slate-100 transition hover:bg-white/10 sm:hidden"
           aria-label="Toggle navigation"
         >
           {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
@@ -70,7 +70,7 @@ const NavBar = () => {
       {nav && (
         <div className="sm:hidden">
           <div className="fixed inset-0 bg-slate-950/88 backdrop-blur-xl" onClick={() => setNav(false)} />
-          <ul className="section-card soft-shadow absolute left-1/2 top-20 z-10 w-[calc(100%-2rem)] -translate-x-1/2 rounded-[2rem] p-3">
+          <ul className="section-card soft-shadow absolute left-1/2 top-20 z-10 w-[calc(100%-2rem)] -translate-x-1/2 rounded-[1.6rem] p-3">
             {links.map(({id,link}) => (
               <li key={id}>
                 <Link
@@ -78,7 +78,7 @@ const NavBar = () => {
                   to={link}
                   smooth
                   duration={500}
-                  className="block rounded-2xl px-4 py-4 text-base font-medium capitalize text-slate-100 transition hover:bg-white/5"
+                  className="block rounded-[1rem] px-4 py-4 text-base font-medium capitalize text-slate-100 transition hover:bg-white/5"
                 >
                   {link}
                 </Link>

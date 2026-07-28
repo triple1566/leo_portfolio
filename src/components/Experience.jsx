@@ -78,7 +78,7 @@ const Experience = () => {
 
                 <div className='grid gap-6 xl:grid-cols-2'>
                     {experienceCategories.map(({ title, description, items }) => (
-                        <article key={title} className='section-card rounded-[2rem] p-6 sm:p-8'>
+                        <article key={title} className='section-card rounded-[1.6rem] p-6 sm:p-8'>
                             <div className='mb-6'>
                                 <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>{title}</p>
                                 <p className='mt-2 text-sm leading-7 text-slate-300'>{description}</p>
@@ -86,8 +86,8 @@ const Experience = () => {
 
                             <div className='grid grid-cols-2 gap-4 sm:grid-cols-3'>
                                 {items.map(({ src, title: itemTitle }) => (
-                                    <div key={itemTitle} className='glass-panel group flex flex-col items-center rounded-3xl p-4 text-center transition hover:-translate-y-1 hover:bg-white/10'>
-                                        <div className='flex h-20 w-20 items-center justify-center rounded-2xl bg-white/5 p-3'>
+                                    <div key={itemTitle} className='glass-panel group flex flex-col items-center rounded-[1.25rem] p-4 text-center transition hover:-translate-y-1 hover:bg-white/10'>
+                                        <div className='flex h-20 w-20 items-center justify-center rounded-[1rem] bg-white/5 p-3'>
                                             <img src={src} alt={itemTitle} className='max-h-full max-w-full object-contain' />
                                         </div>
                                         <p className='mt-4 text-sm font-medium text-slate-100'>{itemTitle}</p>

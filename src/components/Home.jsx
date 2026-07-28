@@ -28,8 +28,8 @@ const Home = () => {
         <section name='home' className='section-shell px-4 pb-20 pt-32 sm:px-6 lg:px-8 lg:pt-36'>
             <div className='mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]'>
                 <div className='space-y-8'>
-                    <div className='section-card soft-shadow inline-flex items-center gap-3 rounded-full px-4 py-2 text-sm text-slate-200/80'>
-                        <span className='h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-[0_0_24px_rgba(34,211,238,0.85)]' />
+                    <div className='section-card soft-shadow inline-flex items-center gap-3 rounded-[1rem] px-4 py-2 text-sm text-slate-200/80'>
+                        <span className='h-2.5 w-2.5 rounded-[0.5rem] bg-cyan-400 shadow-[0_0_24px_rgba(34,211,238,0.85)]' />
                         Actively in search for a 2027 SDE internship role
                     </div>
 
@@ -38,7 +38,7 @@ const Home = () => {
                         <h1 className='max-w-4xl text-4xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl'>
                             Hi I&apos;m Leo. I am a:{' '}
                             <span
-                                className={`inline-flex min-w-[14ch] items-center rounded-full border border-cyan-300/20 bg-white/5 px-4 py-1.5 text-cyan-100 shadow-[0_0_40px_rgba(34,211,238,0.12)] transition-all duration-300 ease-out ${isTransitioning ? 'translate-y-2 scale-[0.98] opacity-0 blur-[6px]' : 'translate-y-0 scale-100 opacity-100 blur-0'}`}
+                                className={`inline-flex min-w-[14ch] items-center rounded-[1rem] border border-cyan-300/20 bg-white/5 px-4 py-1.5 text-cyan-100 shadow-[0_0_40px_rgba(34,211,238,0.12)] transition-all duration-300 ease-out ${isTransitioning ? 'translate-y-2 scale-[0.98] opacity-0 blur-[6px]' : 'translate-y-0 scale-100 opacity-100 blur-0'}`}
                             >
                                 <span className='bg-gradient-to-r from-cyan-300 via-sky-300 to-indigo-300 bg-clip-text text-transparent'>
                                     {roles[roleIndex]}
@@ -55,7 +55,7 @@ const Home = () => {
                             to='portfolio'
                             duration={500}
                             smooth
-                            className='inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500 px-6 py-3 font-semibold text-slate-950 transition hover:scale-[1.02]'
+                            className='inline-flex items-center justify-center gap-3 rounded-[1rem] bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500 px-6 py-3 font-semibold text-slate-950 transition hover:scale-[1.02]'
                         >
                             View Portfolio
                             <FaArrowRightLong />
@@ -64,7 +64,7 @@ const Home = () => {
                             to='contact'
                             duration={500}
                             smooth
-                            className='inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10'
+                            className='inline-flex items-center justify-center rounded-[1rem] border border-white/10 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10'
                         >
                             Contact Me
                         </Link>
@@ -73,7 +73,7 @@ const Home = () => {
                     <a
                         href='/JEONG%20SOOCHARN%20-%20RESUME.pdf'
                         download
-                        className='inline-flex w-fit items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400 hover:text-slate-950 sm:hidden'
+                        className='inline-flex w-fit items-center justify-center rounded-[1rem] border border-cyan-300/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400 hover:text-slate-950 sm:hidden'
                     >
                         Download Resume
                     </a>
@@ -84,7 +84,7 @@ const Home = () => {
                             ['Stack', 'Web, tools, and game tech'],
                             ['Focus', 'Polish and utility'],
                         ].map(([label, value]) => (
-                            <div key={label} className='section-card rounded-3xl p-4'>
+                            <div key={label} className='section-card rounded-[1.25rem] p-4'>
                                 <p className='text-xs uppercase tracking-[0.24em] text-slate-400'>{label}</p>
                                 <p className='mt-2 text-sm font-semibold text-white'>{value}</p>
                             </div>
@@ -93,20 +93,20 @@ const Home = () => {
                 </div>
 
                 <div className='relative mx-auto w-full max-w-xl'>
-                    <div className='absolute -inset-6 rounded-[2rem] bg-gradient-to-tr from-cyan-400/20 via-sky-500/10 to-fuchsia-500/10 blur-2xl' />
-                    <div className='section-card soft-shadow relative overflow-hidden rounded-[2rem] p-4 sm:p-6'>
+                    <div className='absolute -inset-6 rounded-[1.6rem] bg-gradient-to-tr from-cyan-400/20 via-sky-500/10 to-fuchsia-500/10 blur-2xl' />
+                    <div className='section-card soft-shadow relative overflow-hidden rounded-[1.6rem] p-4 sm:p-6'>
                         <img
                             src={HeroImage}
                             alt='Leo portrait'
-                            className='aspect-[4/5] w-full rounded-[1.5rem] object-cover object-center'
+                            className='aspect-[4/5] w-full rounded-[1.2rem] object-cover object-center'
                         />
 
                         <div className='mt-4 grid gap-4 sm:grid-cols-2'>
-                            <div className='glass-panel rounded-3xl p-4'>
+                            <div className='glass-panel rounded-[1.25rem] p-4'>
                                 <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>Current mode</p>
                                 <p className='mt-2 text-sm font-medium text-white'>Refining and rebuilding</p>
                             </div>
-                            <div className='glass-panel rounded-3xl p-4'>
+                            <div className='glass-panel rounded-[1.25rem] p-4'>
                                 <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>What this is</p>
                                 <p className='mt-2 text-sm font-medium text-white'>A clearer portfolio experience</p>
                             </div>
