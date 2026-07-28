@@ -12,7 +12,7 @@ const Home = () => {
                 <div className='space-y-8'>
                     <div className='section-card soft-shadow inline-flex items-center gap-3 rounded-full px-4 py-2 text-sm text-slate-200/80'>
                         <span className='h-2.5 w-2.5 rounded-full bg-cyan-400 shadow-[0_0_24px_rgba(34,211,238,0.85)]' />
-                        Portfolio site, refreshed with a more refined visual language.
+                        Refined portfolio layout.
                     </div>
 
                     <div className='space-y-6'>

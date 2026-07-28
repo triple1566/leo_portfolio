@@ -1,6 +1,5 @@
 import React from 'react';
 import UE1 from "../assets/portfolio/UE1.jpeg";
-import UE2 from "../assets/portfolio/UE2.jpeg";
 import TAAMapp from "../assets/portfolio/TAAMapp.png";
 import QuickBay from "../assets/portfolio/QuickBay.png";
 import RBF from "../assets/portfolio/RBF.png";
@@ -43,14 +42,17 @@ const Portfolio = () => {
     {
       id: 6,
       src: UE1,
-      text: "HUD/UI Demo",
-      link: "https://youtu.be/SeTS6ctvShU"
-    },
-    {
-      id: 7,
-      src: UE2,
-      text: "FPV-TPV Server Replication Demo",
-      link: "https://youtu.be/RE01SPaD6E4"
+      text: "Unreal Engine Demos",
+      links: [
+        {
+          label: "HUD/UI Demo",
+          href: "https://youtu.be/SeTS6ctvShU"
+        },
+        {
+          label: "FPV-TPV Server Replication Demo",
+          href: "https://youtu.be/RE01SPaD6E4"
+        }
+      ]
     },
   ];
 
@@ -68,7 +70,7 @@ const Portfolio = () => {
         </div>
 
         <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
-          {portfolios.map(({id,src,text,link}) => (
+          {portfolios.map(({id,src,text,link,links}) => (
             <article key={id} className='section-card group overflow-hidden rounded-[1.75rem]'>
               <div className='relative overflow-hidden'>
                 <img src={src} alt={text} className='h-64 w-full object-cover transition duration-500 group-hover:scale-105' />
@@ -79,15 +81,32 @@ const Portfolio = () => {
                   <p className='text-xs uppercase tracking-[0.22em] text-cyan-200/70'>Featured project</p>
                   <h3 className='mt-2 text-xl font-semibold text-white'>{text}</h3>
                 </div>
-                <a
-                  href={link}
-                  target='_blank'
-                  rel='noreferrer'
-                  className='inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
-                >
-                  Open project
-                  <span aria-hidden='true'>↗</span>
-                </a>
+                <div className='flex flex-col gap-3'>
+                  {links ? (
+                    links.map(({label, href}) => (
+                      <a
+                        key={label}
+                        href={href}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
+                      >
+                        {label}
+                        <span aria-hidden='true'>↗</span>
+                      </a>
+                    ))
+                  ) : (
+                    <a
+                      href={link}
+                      target='_blank'
+                      rel='noreferrer'
+                      className='inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
+                    >
+                      Open project
+                      <span aria-hidden='true'>↗</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}
