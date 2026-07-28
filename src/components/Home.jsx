@@ -45,6 +45,14 @@ const Home = () => {
                         </Link>
                     </div>
 
+                    <a
+                        href='/JEONG%20SOOCHARN%20-%20RESUME.pdf'
+                        download
+                        className='inline-flex w-fit items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400 hover:text-slate-950 sm:hidden'
+                    >
+                        Download Resume
+                    </a>
+
                     <div className='grid gap-4 sm:grid-cols-3'>
                         {[
                             ['Projects', '8 featured pieces'],
