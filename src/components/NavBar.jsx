@@ -31,46 +31,63 @@ const NavBar = () => {
     ]//this is an array for the top navigation bar.
 
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4
-    text-[#14216d] backdrop-blur-md bg-[#fff6f6]/50 hover:backdrop-blur-lg fixed'>
-      <div>
-        <Link to='home' smooth duration={500} className="text-3xl md:text-5xl font-signature ml-2 cursor-pointer">
-            Leo Jeong
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
+      <div className="glass-panel mx-auto flex h-16 max-w-6xl items-center justify-between rounded-full px-5 shadow-2xl shadow-black/20">
+        <Link
+          to="home"
+          smooth
+          duration={500}
+          className="cursor-pointer text-lg font-semibold tracking-[0.28em] text-white/95 uppercase"
+        >
+          Leo Jeong
         </Link>
-      </div>
-      <ul className='visibility: hidden sm:flex'>
 
-        {links.map(({id,link})=>(
-            <li key={id} className='px-4 cursor-pointer capitalize font-semibold
-            text-[#151515] hover:scale-110 duration-200 hover:text-[#ff0059]'>
-                <Link to={link} smooth duration={500}>{link}</Link>
+        <ul className="hidden items-center gap-1 rounded-full border border-white/5 bg-white/5 px-2 py-1 backdrop-blur sm:flex">
+          {links.map(({id,link})=> (
+            <li key={id}>
+              <Link
+                to={link}
+                smooth
+                duration={500}
+                className="cursor-pointer rounded-full px-4 py-2 text-sm font-medium capitalize text-slate-200/80 transition hover:bg-white/10 hover:text-white"
+              >
+                {link}
+              </Link>
             </li>
-        ))}
-      </ul>
-
-      <div
-      onClick={()=>setNav(!nav)}
-      className='cursor-pointor pr-4 z-10 text-gray-500 sm:hidden'
-      >
-          {nav ? <FaTimes size={30} className='cursor-pointer hover:scale-105 duration-200'/> : <FaBars size={30}
-          className='cursor-pointer hover:scale-105 duration-200'/>}
-      </div>
-
-      {nav &&(
-        <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full
-        h-screen bg-[#ffffff] text-[#7a7a7a] opacity-95'>
-        {links.map(({id,link})=>(
-              <li key={id} className='px-4 capitalize py-6 text-2xl cursor-pointer
-              hover:scale-105 duration-200
-              hover:text-[#000000] hover:opacity-100'>
-                  <Link onClick={()=>setNav(!nav)} to={link} smooth duration={500}>{link}</Link>
-              </li>
           ))}
         </ul>
-      )}
 
-      
-    </div>
+        <button
+          type="button"
+          onClick={() => setNav(!nav)}
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-100 transition hover:bg-white/10 sm:hidden"
+          aria-label="Toggle navigation"
+        >
+          {nav ? <FaTimes size={20} /> : <FaBars size={20} />}
+        </button>
+      </div>
+
+      {nav && (
+        <div className="sm:hidden">
+          <div className="fixed inset-0 bg-slate-950/88 backdrop-blur-xl" onClick={() => setNav(false)} />
+          <ul className="section-card soft-shadow absolute left-1/2 top-20 z-10 w-[calc(100%-2rem)] -translate-x-1/2 rounded-[2rem] p-3">
+            {links.map(({id,link}) => (
+              <li key={id}>
+                <Link
+                  onClick={() => setNav(false)}
+                  to={link}
+                  smooth
+                  duration={500}
+                  className="block rounded-2xl px-4 py-4 text-base font-medium capitalize text-slate-100 transition hover:bg-white/5"
+                >
+                  {link}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </header>
   )
 }
 

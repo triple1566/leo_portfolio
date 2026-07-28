@@ -63,15 +63,12 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
-      <ul>
+    <div className='fixed left-4 top-1/2 z-40 hidden -translate-y-1/2 lg:block'>
+      <ul className='space-y-3'>
         {links.map(({id, child, href, style, download}) => (
-
-            <li key = {id} className={"flex justify-between items-center w-40 h-14 px-4 backdrop-blur-md bg-white/60 ml-[-100px] hover:rounded-lg duration-300 hover:ml-[-10px] hover:bg-[#ff3a7f] hover:text-white" + style}>
-              <a href={href} className='flex justify-between items-center w-full text-{#0c0e3e} ' download={download} target='_blank' rel='noreferrer'>
-                <>
-                  {child}
-                </>
+            <li key = {id} className={`glass-panel group flex w-44 items-center justify-between overflow-hidden rounded-full px-4 py-3 text-slate-100 transition duration-300 hover:translate-x-2 hover:bg-cyan-400 hover:text-slate-950 ${style}`}>
+              <a href={href} className='flex w-full items-center justify-between gap-3 text-sm font-medium' download={download} target='_blank' rel='noreferrer'>
+                {child}
               </a>
             </li>))}
 

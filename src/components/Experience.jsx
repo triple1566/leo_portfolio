@@ -122,27 +122,27 @@ const Experience = () => {
     ]
 
   return (
-    <div name='experience' className='w-full h-full'>
+        <section name='experience' className='section-shell px-4 py-12 sm:px-6 lg:px-8'>
+            <div className='mx-auto max-w-6xl'>
+                <div className='mb-8 max-w-2xl'>
+                    <p className='section-eyebrow'>Experience</p>
+                    <h2 className='section-title mt-4'>Tools and technologies that show up across the work.</h2>
+                </div>
 
-        <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center items-center h-full text-[#0c0e3e] w-[80%] sm:w-[70%]'>
-            <div className='pb-12'>
-                <p className='text-[30px] font-bold inline border-b-4 sm:text-[40px]'>
-                    Experience
-                </p>
-            </div>
-            <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-gray-900 font-semibold text-center py-8 px-12 sm:px-0'>
-                {
-                    tech_stack.map(({id,src,title,style})=>(
-                    <div key={id} className={'bg-gray-200 shadow-md hover:scale-105 duration 500 py-2 rounded-lg hover:bg-[#ff0059] hover:text-white duration-300'}>
-                        <img src={src} alt="" className='w-20 mx-auto p-2'/>
-                        <p className='mt-4'>{title}</p>
+                <div className='section-card rounded-[2rem] p-6 sm:p-8'>
+                    <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6'>
+                        {tech_stack.map(({id,src,title}) => (
+                            <div key={id} className='glass-panel group flex flex-col items-center rounded-3xl p-4 text-center transition hover:-translate-y-1 hover:bg-white/10'>
+                                <div className='flex h-20 w-20 items-center justify-center rounded-2xl bg-white/5 p-3'>
+                                    <img src={src} alt={title} className='max-h-full max-w-full object-contain' />
+                                </div>
+                                <p className='mt-4 text-sm font-medium text-slate-100'>{title}</p>
+                            </div>
+                        ))}
                     </div>
-                    ))
-                }
+                </div>
             </div>
-        </div>
-
-    </div>
+        </section>
   )
 }
 

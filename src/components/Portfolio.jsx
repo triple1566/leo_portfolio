@@ -8,8 +8,6 @@ import RBF from "../assets/portfolio/RBF.png";
 import PolyReg from "../assets/portfolio/PolyReg.png";
 import RAGarXivRec from "../assets/portfolio/RAGarXivRec.png";
 
-//base margin:  w-[80%] sm:w-[70%]
-
 const Portfolio = () => {
 
   const portfolios=[
@@ -64,31 +62,45 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="portfolio" className='w-full text-[#0c0e3e] md: h-full' >
-      <div className='max-w-screen-lg p-4 mx-auto flex flex-col items-center justify-center h-full w-[90%] sm:w-[80%]'>
-
-        <div className='pb-12'>
-          <p className='text-[30px] font-bold inline border-b-4 sm:text-[40px]'>Portfolio</p>
+    <section name="portfolio" className='section-shell px-4 py-12 sm:px-6 lg:px-8'>
+      <div className='mx-auto max-w-6xl'>
+        <div className='mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-end sm:justify-between'>
+          <div>
+            <p className='section-eyebrow'>Portfolio</p>
+            <h2 className='section-title mt-4 max-w-2xl'>Selected work presented with a cleaner editorial rhythm.</h2>
+          </div>
+          <p className='section-copy max-w-xl text-sm leading-7 sm:text-right sm:text-base'>
+            The projects are unchanged, but the layout now gives each one more breathing room and visual priority.
+          </p>
         </div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-
-            {
-              portfolios.map(({id,src,text,link})=>(
-              <div key='id' className='bg-gradient-to-br from-white to-gray-300 shadow-md rounded-lg text-white'>
-                  <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
-                  <div href='link' className='flex items-center justify-center text-gray-600 font-semibold text-center'>
-                    <button className='w-full px-6 py-3 m-4 duration-200 bg-gradient-to-br from-gray-300 to-white rounded-md hover:text-[#ff0059]'><a href={link}>{text}</a></button>
-                  </div>
+        <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
+          {portfolios.map(({id,src,text,link}) => (
+            <article key={id} className='section-card group overflow-hidden rounded-[1.75rem]'>
+              <div className='relative overflow-hidden'>
+                <img src={src} alt={text} className='h-64 w-full object-cover transition duration-500 group-hover:scale-105' />
+                <div className='absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-80' />
               </div>
-              ))
-            }
-
+              <div className='flex flex-col gap-4 p-6'>
+                <div>
+                  <p className='text-xs uppercase tracking-[0.22em] text-cyan-200/70'>Featured project</p>
+                  <h3 className='mt-2 text-xl font-semibold text-white'>{text}</h3>
+                </div>
+                <a
+                  href={link}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
+                >
+                  Open project
+                  <span aria-hidden='true'>↗</span>
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
-
-
       </div>
-    </div>
+    </section>
   );
 };
 
