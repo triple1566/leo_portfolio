@@ -8,6 +8,10 @@ import RAGarXivRec from "../assets/portfolio/RAGarXivRec.png";
 
 const categories = [
   {
+    key: 'all',
+    label: 'All',
+  },
+  {
     key: 'app',
     label: 'App',
   },
@@ -26,7 +30,7 @@ const categories = [
 ];
 
 const Portfolio = () => {
-  const [activeCategory, setActiveCategory] = useState('app');
+  const [activeCategory, setActiveCategory] = useState('all');
 
   const portfolios=[
     {
@@ -82,7 +86,9 @@ const Portfolio = () => {
     },
   ];
 
-  const visibleProjects = portfolios.filter((project) => project.category === activeCategory);
+  const visibleProjects = activeCategory === 'all'
+    ? portfolios
+    : portfolios.filter((project) => project.category === activeCategory);
 
   return (
     <section name="portfolio" className='section-shell px-4 py-12 sm:px-6 lg:px-8'>
