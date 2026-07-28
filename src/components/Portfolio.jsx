@@ -2,7 +2,6 @@ import React from 'react';
 import UE1 from "../assets/portfolio/UE1.jpeg";
 import UE2 from "../assets/portfolio/UE2.jpeg";
 import TAAMapp from "../assets/portfolio/TAAMapp.png";
-import TODOlist from "../assets/portfolio/TODOlist.png";
 import QuickBay from "../assets/portfolio/QuickBay.png";
 import RBF from "../assets/portfolio/RBF.png";
 import PolyReg from "../assets/portfolio/PolyReg.png";
@@ -31,30 +30,24 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      src: TODOlist,
-      text: "Leo's ToDo List",
-      link: "https://leo-pern-todo-650a2faaa317.herokuapp.com/"
-    },
-    {
-      id: 5,
       src: RBF,
       text: "RBF Image Desnoiser",
       link: "https://github.com/triple1566/RBF_Image_Denoiser"
     },
     {
-      id: 6,
+      id: 5,
       src: PolyReg,
       text: "Polynomial Regression Algorithm",
       link: "https://github.com/triple1566/Polynomial_Regression_Algorithm/blob/main/PolyReg/poly_notebook.ipynb"
     },
     {
-      id: 7,
+      id: 6,
       src: UE1,
       text: "HUD/UI Demo",
       link: "https://youtu.be/SeTS6ctvShU"
     },
     {
-      id: 8,
+      id: 7,
       src: UE2,
       text: "FPV-TPV Server Replication Demo",
       link: "https://youtu.be/RE01SPaD6E4"
