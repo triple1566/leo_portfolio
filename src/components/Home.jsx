@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeroImage from "../assets/heroImage.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import {Link} from 'react-scroll';
 
 
+const roles = ['software engineer', 'AI enthusiast', 'Technical Artist', 'Bookworm'];
+
 
 const Home = () => {
+    const [roleIndex, setRoleIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setIsTransitioning(true);
+
+            window.setTimeout(() => {
+                setRoleIndex((currentIndex) => (currentIndex + 1) % roles.length);
+                setIsTransitioning(false);
+            }, 260);
+        }, 5000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
   return (
         <section name='home' className='section-shell px-4 pb-20 pt-32 sm:px-6 lg:px-8 lg:pt-36'>
             <div className='mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]'>
@@ -17,8 +35,15 @@ const Home = () => {
 
                     <div className='space-y-6'>
                         <p className='section-eyebrow'>Welcome</p>
-                        <h1 className='max-w-3xl text-5xl font-semibold tracking-[-0.06em] text-white sm:text-7xl lg:text-8xl'>
-                            Leo Jeong, building work that feels sharp, practical, and memorable.
+                        <h1 className='max-w-4xl text-4xl font-semibold tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl'>
+                            Hi I&apos;m Leo. I am a:{' '}
+                            <span
+                                className={`inline-flex min-w-[14ch] items-center rounded-full border border-cyan-300/20 bg-white/5 px-4 py-1.5 text-cyan-100 shadow-[0_0_40px_rgba(34,211,238,0.12)] transition-all duration-300 ease-out ${isTransitioning ? 'translate-y-2 scale-[0.98] opacity-0 blur-[6px]' : 'translate-y-0 scale-100 opacity-100 blur-0'}`}
+                            >
+                                <span className='bg-gradient-to-r from-cyan-300 via-sky-300 to-indigo-300 bg-clip-text text-transparent'>
+                                    {roles[roleIndex]}
+                                </span>
+                            </span>
                         </h1>
                         <p className='max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl'>
                             Explore to see my works.
