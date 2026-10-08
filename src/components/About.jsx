@@ -6,7 +6,7 @@ const About = () => {
       <div className='mx-auto grid max-w-6xl gap-6 lg:grid-cols-[0.9fr_1.1fr]'>
         <div className='section-card rounded-[1.6rem] p-8 sm:p-10'>
           <p className='section-eyebrow'>About</p>
-          <h2 className='section-title mt-4'>A concise note on what you’re seeing right now.</h2>
+          <h2 className='section-title mt-4'>Toronto based Software Engineer focusing on AI Inference and Enterprise Software.</h2>
         </div>
 
         <div className='section-card rounded-[1.6rem] p-8 sm:p-10'>
@@ -15,10 +15,10 @@ const About = () => {
           </p>
           <div className='mt-8 grid gap-4 sm:grid-cols-2'>
             {[
-              'Modernized structure and spacing',
-              'Content stays in place for now',
-              'Cleaner visual hierarchy',
-              'Designed to feel more polished',
+              'AI',
+              'Web',
+              'ERP',
+              'Games and 3D Engines',
             ].map((item) => (
               <div key={item} className='glass-panel rounded-[1.25rem] px-4 py-4 text-sm text-slate-200/80'>
                 {item}

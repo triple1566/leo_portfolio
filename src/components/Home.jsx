@@ -103,12 +103,12 @@ const Home = () => {
 
                         <div className='mt-4 grid gap-4 sm:grid-cols-2'>
                             <div className='glass-panel rounded-[1.25rem] p-4'>
-                                <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>Current mode</p>
-                                <p className='mt-2 text-sm font-medium text-white'>Refining and rebuilding</p>
+                                <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>Favorite Music</p>
+                                <p className='mt-2 text-sm font-medium text-white'>Jupiter by Gustav Holst's "Planets"</p>
                             </div>
                             <div className='glass-panel rounded-[1.25rem] p-4'>
-                                <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>What this is</p>
-                                <p className='mt-2 text-sm font-medium text-white'>A clearer portfolio experience</p>
+                                <p className='text-xs uppercase tracking-[0.24em] text-cyan-200/70'>Favorite Game</p>
+                                <p className='mt-2 text-sm font-medium text-white'>Undertale</p>
                             </div>
                         </div>
                     </div>
