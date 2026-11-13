@@ -18,6 +18,7 @@ import jv from "../assets/javalogo.png";
 import an from "../assets/Android_robot.png";
 import ex from "../assets/express-js.png";
 import rn from "../assets/react-native.png";
+import golang from "../assets/Go-Logo_Blue.png";
 
 const experienceCategories = [
     {
@@ -34,6 +35,7 @@ const experienceCategories = [
             { src: jv, title: 'Java' },
             { src: an, title: 'Android' },
             { src: rn, title: 'React Native' },
+            { src: golang, title: 'Golang' },
             { src: github, title: 'GitHub' },
         ],
     },

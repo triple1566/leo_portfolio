@@ -84,6 +84,60 @@ const Portfolio = () => {
       ],
       category: 'game-dev',
     },
+    {
+      id: 7,
+      text: "Agentic OdooERP Helper",
+      links: [
+        {
+          label: "Project Repository",
+          href: "https://github.com/triple1566/Openclaw-Odoo-Agent-Demo"
+        },
+        {
+          label: "Sample Hooks",
+          href: "https://github.com/triple1566/openclaw_streamer"
+        }
+      ],
+      category: 'applied-ai',
+    },
+    {
+      id: 8,
+      text: "English Study Helper - Yt Shorts",
+      link: "https://github.com/triple1566/yt_shorts_description_scraper",
+      category: 'app',
+    },
+    {
+      id: 9,
+      text: "Hybrid South Korean Procurement Parsing Pipeline (Qwen OCR + Google Document AI)",
+      links: [
+        {
+          label: "View Resume",
+          href: "/JEONG%20SOOCHARN%20-%20RESUME.pdf"
+        }
+      ],
+      category: 'applied-ai',
+    },
+    {
+      id: 10,
+      text: "Odoo Sales/CRM/POS Module Implementation",
+      links: [
+        {
+          label: "View Resume",
+          href: "/JEONG%20SOOCHARN%20-%20RESUME.pdf"
+        }
+      ],
+      category: 'app',
+    },
+    {
+      id: 11,
+      text: "Multi-tenant Authentication Service",
+      links: [
+        {
+          label: "View Resume",
+          href: "/JEONG%20SOOCHARN%20-%20RESUME.pdf"
+        }
+      ],
+      category: 'app',
+    },
   ];
 
   const visibleProjects = activeCategory === 'all'
@@ -119,10 +173,16 @@ const Portfolio = () => {
         <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
           {visibleProjects.map(({id,src,text,link,links}) => (
             <article key={id} className='section-card group overflow-hidden rounded-[1.4rem]'>
-              <div className='relative overflow-hidden'>
-                <img src={src} alt={text} className='h-64 w-full object-cover transition duration-500 group-hover:scale-105' />
-                <div className='absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-80' />
-              </div>
+              {src ? (
+                <div className='relative overflow-hidden'>
+                  <img src={src} alt={text} className='h-64 w-full object-cover transition duration-500 group-hover:scale-105' />
+                  <div className='absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-80' />
+                </div>
+              ) : (
+                <div className='flex h-64 items-center justify-center bg-gradient-to-br from-slate-800 via-slate-900 to-cyan-950 px-8 text-center'>
+                  <p className='max-w-sm text-lg font-semibold text-cyan-100'>{text}</p>
+                </div>
+              )}
               <div className='flex flex-col gap-4 p-6'>
                 <div>
                   <p className='text-xs uppercase tracking-[0.22em] text-cyan-200/70'>Featured project</p>
