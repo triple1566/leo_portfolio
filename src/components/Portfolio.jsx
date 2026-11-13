@@ -111,7 +111,7 @@ const Portfolio = () => {
       links: [
         {
           label: "View Resume",
-          href: "/JEONG%20SOOCHARN%20-%20RESUME.pdf"
+          href: "/Leo_s_resume.pdf"
         }
       ],
       category: 'applied-ai',
@@ -122,7 +122,7 @@ const Portfolio = () => {
       links: [
         {
           label: "View Resume",
-          href: "/JEONG%20SOOCHARN%20-%20RESUME.pdf"
+          href: "/Leo_s_resume.pdf"
         }
       ],
       category: 'app',
@@ -133,7 +133,7 @@ const Portfolio = () => {
       links: [
         {
           label: "View Resume",
-          href: "/JEONG%20SOOCHARN%20-%20RESUME.pdf"
+          href: "/Leo_s_resume.pdf"
         }
       ],
       category: 'app',

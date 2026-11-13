@@ -71,7 +71,7 @@ const Home = () => {
                     </div>
 
                     <a
-                        href='/JEONG%20SOOCHARN%20-%20RESUME.pdf'
+                        href='/Leo_s_resume.pdf'
                         download
                         className='inline-flex w-fit items-center justify-center rounded-[1rem] border border-cyan-300/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400 hover:text-slate-950 sm:hidden'
                     >
