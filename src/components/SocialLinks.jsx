@@ -43,7 +43,7 @@ const SocialLinks = () => {
         </>
       ),
       href: 'https://www.linkedin.com/in/leoj1566/',
-      style: 'rounded-tr-md'
+      style: 'rounded-tr-[2px]'
     },
     {
       id:2,
@@ -53,7 +53,7 @@ const SocialLinks = () => {
         </>
       ),
       href: 'https://github.com/triple1566',
-      style: 'rounded-tr-md'
+      style: 'rounded-tr-[2px]'
     },
     {
       id:3,
@@ -63,7 +63,7 @@ const SocialLinks = () => {
         </>
       ),
       href: 'mailto:ljhub1566@gmail.com',
-      style: 'rounded-tr-md'
+      style: 'rounded-tr-[2px]'
     },
     {
       id:4,
@@ -73,7 +73,7 @@ const SocialLinks = () => {
         </>
       ),
       href: '/Leo_s_resume.pdf',
-      style: 'rounded-tr-md',
+      style: 'rounded-tr-[2px]',
       download: true,
     }
   ];
@@ -84,11 +84,11 @@ const SocialLinks = () => {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <div className={`glass-panel soft-shadow overflow-hidden rounded-r-[1.4rem] border-l-0 transition-all duration-300 ease-out ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-[calc(100%-1rem)] opacity-95'}`}>
+      <div className={`glass-panel soft-shadow overflow-hidden rounded-r-[2px] border-l-0 transition-all duration-300 ease-out ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-[calc(100%-1rem)] opacity-95'}`}>
         <div className='absolute left-0 top-0 h-full w-4 bg-cyan-400/20' />
       <ul className='space-y-3 p-3 pl-4'>
         {links.map(({id, child, href, style, download}) => (
-            <li key = {id} className={`group flex w-36 items-center justify-between overflow-hidden rounded-[1rem] px-3 py-2.5 text-slate-100 transition duration-300 hover:translate-x-2 hover:bg-cyan-400 hover:text-slate-950 ${style}`}>
+            <li key = {id} className={`group flex w-36 items-center justify-between overflow-hidden rounded-[2px] px-3 py-2.5 text-slate-100 transition duration-300 hover:translate-x-2 hover:bg-cyan-400 hover:text-slate-950 ${style}`}>
               <a href={href} className='flex w-full items-center justify-between gap-2 text-xs font-medium' download={download} target='_blank' rel='noreferrer'>
                 {child}
               </a>

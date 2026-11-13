@@ -4,12 +4,12 @@ const About = () => {
   return (
     <section name='about' className='section-shell px-4 py-12 sm:px-6 lg:px-8'>
       <div className='mx-auto grid max-w-6xl gap-6 lg:grid-cols-[0.9fr_1.1fr]'>
-        <div className='section-card rounded-[1.6rem] p-8 sm:p-10'>
+        <div className='section-card rounded-[2px] p-8 sm:p-10'>
           <p className='section-eyebrow'>About</p>
           <h2 className='section-title mt-4'>Toronto based Software Engineer focusing on AI Inference and Enterprise Software.</h2>
         </div>
 
-        <div className='section-card rounded-[1.6rem] p-8 sm:p-10'>
+        <div className='section-card rounded-[2px] p-8 sm:p-10'>
           <p className='section-copy text-lg leading-8 sm:text-xl'>
             Hi I'm Leo. Welcome to my front porch! Please take a look around, and see what I made in the past few years.
           </p>
@@ -20,7 +20,7 @@ const About = () => {
               'ERP',
               'Games and 3D Engines',
             ].map((item) => (
-              <div key={item} className='glass-panel rounded-[1.25rem] px-4 py-4 text-sm text-slate-200/80'>
+              <div key={item} className='glass-panel rounded-[2px] px-4 py-4 text-sm text-slate-200/80'>
                 {item}
               </div>
             ))}

@@ -158,7 +158,7 @@ const Portfolio = () => {
                   key={key}
                   type='button'
                   onClick={() => setActiveCategory(key)}
-                  className={`inline-flex items-center justify-center rounded-[1rem] border px-4 py-2 text-sm font-medium transition ${isActive
+                  className={`inline-flex items-center justify-center rounded-[2px] border px-4 py-2 text-sm font-medium transition ${isActive
                     ? 'border-cyan-300/50 bg-cyan-400 text-slate-950'
                     : 'border-white/10 bg-white/5 text-slate-200 hover:bg-white/10 hover:text-white'
                     }`}
@@ -172,7 +172,7 @@ const Portfolio = () => {
 
         <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
           {visibleProjects.map(({id,src,text,link,links}) => (
-            <article key={id} className='section-card group overflow-hidden rounded-[1.4rem]'>
+            <article key={id} className='section-card group overflow-hidden rounded-[2px]'>
               {src ? (
                 <div className='relative overflow-hidden'>
                   <img src={src} alt={text} className='h-64 w-full object-cover transition duration-500 group-hover:scale-105' />
@@ -196,7 +196,7 @@ const Portfolio = () => {
                         href={href}
                         target='_blank'
                         rel='noreferrer'
-                        className='inline-flex w-fit items-center gap-2 rounded-[1rem] border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
+                        className='inline-flex w-fit items-center gap-2 rounded-[2px] border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
                       >
                         {label}
                         <span aria-hidden='true'>↗</span>
@@ -207,7 +207,7 @@ const Portfolio = () => {
                       href={link}
                       target='_blank'
                       rel='noreferrer'
-                      className='inline-flex w-fit items-center gap-2 rounded-[1rem] border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
+                      className='inline-flex w-fit items-center gap-2 rounded-[2px] border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-cyan-400 hover:text-slate-950'
                     >
                       To Project
                       <span aria-hidden='true'>↗</span>
