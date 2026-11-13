@@ -82,7 +82,7 @@ const Home = () => {
                         {[
                             ['Projects', '8 featured pieces'],
                             ['Stack', 'Web, tools, and game tech'],
-                            ['Focus', 'Polish and utility'],
+                            ['Focus', 'AI application and Inference'],
                         ].map(([label, value]) => (
                             <div key={label} className='section-card rounded-[1.25rem] p-4'>
                                 <p className='text-xs uppercase tracking-[0.24em] text-slate-400'>{label}</p>
