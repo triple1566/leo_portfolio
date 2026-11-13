@@ -11,7 +11,7 @@ const About = () => {
 
         <div className='section-card rounded-[1.6rem] p-8 sm:p-10'>
           <p className='section-copy text-lg leading-8 sm:text-xl'>
-            Hi I'm Leo. Most of this stuff here is pretty outdated, so I'll be putting up a revamped portfolio soon. In the meantime, drink a cup of coffee.
+            Hi I'm Leo. Welcome to my front porch! Please take a look around, and see what I made in the past few years.
           </p>
           <div className='mt-8 grid gap-4 sm:grid-cols-2'>
             {[
